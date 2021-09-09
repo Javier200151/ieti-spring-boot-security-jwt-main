@@ -2,29 +2,6 @@ package org.ada.school.controller.auth;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.ada.school.auth.LoginDto;
-import org.ada.school.auth.TokenDto;
-import org.ada.school.exception.InvalidCredentialsException;
-import org.ada.school.repository.document.User;
-import org.ada.school.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.crypto.bcrypt.BCrypt;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Calendar;
-import java.util.Date;
-
-import static org.ada.school.utils.Constants.CLAIMS_ROLES_KEY;
-import static org.ada.school.utils.Constants.TOKEN_DURATION_MINUTES;
-
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import org.ada.school.auth.LoginDto;
-import org.ada.school.auth.TokenDto;
 import org.ada.school.exception.InvalidCredentialsException;
 import org.ada.school.repository.document.User;
 import org.ada.school.service.UserService;
